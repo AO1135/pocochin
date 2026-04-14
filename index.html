@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>テキスト表示アプリ</title>
+</head>
+<body>
+
+    <h1>入力したテキストを表示</h1>
+
+    <input type="text" id="inputText" placeholder="
+      加藤　みなみ
+倉島　歩生
+池戸　和湖
+岩崎　渓慈郎
+大久保沙弥花
+梶田哲也
+寺澤　敦史
+内野　孝太郎
+井上快
+藤田菜由子
+横道菜月
+川地るみ
+梶田侑那
+若林　慧
+梶田侑那
+早川紗也乃
+      ">
+    <button onclick="displayText()">表示</button>
+
+    <h2>表示結果</h2>
+    <p id="output"></p>
+
+    <script>
+        function displayText() {
+            const text = document.getElementById("inputText").value;
+            document.getElementById("output").textContent = text;
+        }
+    </script>
+
+</body>
+</html>
